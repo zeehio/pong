@@ -1,32 +1,32 @@
 {
   "version": "0.1",
-  "name": "My App",
-  "description": "Your new awesome Open Web App",
+  "name": "zPong",
+  "description": "A pong game with some enhancements!",
   "launch_path": "/",
   "icons": {
-    "16": "/img/icons/mortar-16.png",
-    "48": "/img/icons/mortar-48.png",
-    "128": "/img/icons/mortar-128.png"
+    "16": "/img/icons/zpong-16.png",
+    "48": "/img/icons/zpong-48.png",
+    "128": "/img/icons/zpong-128.png"
   },
   "developer": {
-    "name": "Your Name",
-    "url": "http://yourawesomeapp.com"
+    "name": "Sergio Oller",
+    "url": "http://github.com/zeehio"
   },
   "installs_allowed_from": ["*"],
   "appcache_path": "/cache.manifest",
   "locales": {
-    "es": {
-      "description": "Su nueva aplicación impresionante Open Web",
+    "ca": {
+      "description": "Un joc de pong amb algunes millores!",
       "developer": {
-        "url": "http://yourawesomeapp.com"
+        "url": "http://github.com/zeehio"
       }
     },
-    "it": {
-      "description": "Il vostro nuovo fantastico Open Web App",
+    "es": {
+      "description": "Un juego de pong con algunas mejoras!",
       "developer": {
-        "url": "http://yourawesomeapp.com"
+        "url": "http://github.com/zeehio"
       }
-    }
+    },
   },
   "default_locale": "en"
 }
