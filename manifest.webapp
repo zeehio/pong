@@ -2,7 +2,7 @@
   "version": "0.1",
   "name": "zPong",
   "description": "A pong game with some enhancements!",
-  "launch_path": "/",
+  "launch_path": "/pong",
   "icons": {
     "16": "/img/icons/zpong-16.png",
     "48": "/img/icons/zpong-48.png",
