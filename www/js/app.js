@@ -80,8 +80,14 @@ define(function(require) {
         playerR.x = canvas.width - 2*playerR.sizeX ;
         playerR.y = canvas.height/2.0 - playerR.sizeY/2.0;
         
-        ball.x = canvas.width /2.0 - ball.sizeX/2.0;
         ball.y = canvas.height/2.0 - ball.sizeY/2.0;
+	if ( Math.random() >= 0.5 ) {
+	        ball.x = canvas.width /4.0 - ball.sizeX/2.0;
+		ball.speedX = Math.abs(ball.speedX)
+	} else {
+	        ball.x = canvas.width *3.0/4.0 - ball.sizeX/2.0;
+		ball.speedX = - Math.abs(ball.speedX)
+	}
     };
 
     // Pause and unpause
@@ -139,7 +145,6 @@ define(function(require) {
     
     // Update game objects
     function update(dt) {
-        // Speed in pixels per second
         
         CollplayerLBall=collision(playerL,ball)
         if(input.isDown('S') && 
@@ -189,7 +194,7 @@ define(function(require) {
             playerR.score += 1;
             playerR.sizeY += 2;
             playerL.sizeY -= 2;
-            ball.x = canvas.width /2.0 - ball.sizeX/2.0;
+            ball.x = canvas.width /4.0 - ball.sizeX/2.0;
             ball.y = Math.random()*canvas.height - ball.sizeY/2.0;
             ball.speedX *= -1;
         }
@@ -198,7 +203,7 @@ define(function(require) {
             playerL.score += 1;
             playerL.sizeY += 2;
             playerR.sizeY -= 2;
-            ball.x = canvas.width /2.0 - ball.sizeX/2.0;
+            ball.x = canvas.width *3.0/4.0 - ball.sizeX/2.0;
             ball.y = Math.random()*canvas.height - ball.sizeY/2.0;
             ball.speedX *= -1;
         }
