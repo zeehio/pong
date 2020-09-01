@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "dependencies": {
     "volo-ghdeploy": "0.0.3",
-    "connect": "~2.4.4",
+    "connect": "~3.7.0",
     "less-middleware": "~0.1.5"
   },
   "amd": {},
